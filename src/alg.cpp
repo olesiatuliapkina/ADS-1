@@ -8,7 +8,7 @@ bool checkPrime(uint64_t value) {
     return false;
   } else if (value > 1) {
     for (int k = 2; k < value; k++) {
-      if (value % i == 0) {
+      if (value % k == 0) {
         return false;
       } else {
         return true;
@@ -22,13 +22,13 @@ uint64_t nPrime(uint64_t n) {
   uint64_t number = 1;
   uint64_t counter = 0;
   while (counter < n) {
-    num++;
+    number++;
     if (checkPrime(num)) {
       counter++;
       }
-    num++;
+    number++;
   }
-  return num;
+  return number;
 }
 
 uint64_t nextPrime(uint64_t value) {

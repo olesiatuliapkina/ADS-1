@@ -23,7 +23,7 @@ uint64_t nPrime(uint64_t n) {
   uint64_t counter = 0;
   while (counter < n) {
     number++;
-    if (checkPrime(num)) {
+    if (checkPrime(number)) {
       counter++;
       }
     number++;
